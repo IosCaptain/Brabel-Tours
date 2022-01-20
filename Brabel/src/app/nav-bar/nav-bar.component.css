@@ -5,3 +5,12 @@
   margin-bottom: -15px;
   margin-top: -15px;
 }
+
+#search{
+  position:absolute;
+  width: 400px;
+  right:550px;
+  
+  
+  
+}
