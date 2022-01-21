@@ -11,5 +11,6 @@ export class AppComponent{
 
   constructor(private route: Router) {
     this.homeRoute = route.url;
+    console.log(this.homeRoute)
   }
 }
