@@ -63,6 +63,8 @@
   transition: 0.3s;
   display:inline-block;
   border-radius: 10%;
+  
+ 
 }
 
 .cardcontainer:hover {
