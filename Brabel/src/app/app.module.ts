@@ -10,7 +10,7 @@ import { CityComponent } from './city/city.component';
 import {AppRouting} from "./app-routing";
 import { HomepageComponent } from './homepage/homepage.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { HavanaComponent } from './havana/havana.component';
+import { HongKongComponent } from './hong-kong/hong-kong.component';
 
 
 @NgModule({
@@ -20,7 +20,7 @@ import { HavanaComponent } from './havana/havana.component';
     CityComponent,
     HomepageComponent,
     PageNotFoundComponent,
-    HavanaComponent
+    HongKongComponent
   ],
   imports: [
     BrowserModule,
