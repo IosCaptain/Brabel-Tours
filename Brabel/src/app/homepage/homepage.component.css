@@ -52,27 +52,34 @@
 }
 
 
+
+
 .cardcontainer {
   width: 350px;
   height: 500px;
   background-color: white;
   margin-left: auto;
   margin-right: auto;
-  transition: 0.3s
+  transition: 0.3s;
+  display:inline-block;
+  border-radius: 10%;
 }
 
 .cardcontainer:hover {
-  box-shadow: 0 0 45px gray
+  box-shadow: 0 0 45px gray;
+  
 }
 
 .photo {
   height: 300px;
-  width: 100%
+  width: 100%,
+  
 }
 
 .photo img {
   height: 100%;
-  width: 100%
+  width: 100%;
+  border-radius: 10%;
 }
 
 .txt1 {
@@ -189,4 +196,8 @@
 .fa-clock,
 .fa-comments {
   margin-right: 7px
+}
+
+.card {
+  display:inline-block;
 }
