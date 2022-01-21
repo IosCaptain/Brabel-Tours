@@ -16,7 +16,7 @@ const routes :Routes = [
     component: HongKongComponent
   },
   {
-    path: '/cities/havana',
+    path: 'cities/havana',
     component: HavanaComponent,
   },
   // {
