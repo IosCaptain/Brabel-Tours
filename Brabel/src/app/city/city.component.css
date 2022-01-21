@@ -1,15 +1,8 @@
-.container-custom {
-  width: 600px;
-  height: 450px;
-  display: flex;
-  justify-content: center;
-}
-
 .carousel {
   width:640px;
   height:360px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  
+
 }
