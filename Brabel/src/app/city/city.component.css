@@ -7,5 +7,32 @@
   margin-right: auto;
 }
 .card {
-  margin: 125px;
+  margin: 25px;
+  width: 30rem;
 }
+.cards-container {
+  display: grid;
+  margin-top: 6rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr 1fr;
+
+}
+.title-container {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+}
+.to-center {
+  justify-self: end;
+}
+.form-container{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  justify-self: center;
+  width: 35rem;
+}
+.comment-editor {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
