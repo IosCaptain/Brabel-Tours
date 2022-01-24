@@ -19,10 +19,11 @@ const routes :Routes = [
     path: 'cities/havana',
     component: HavanaComponent,
   },
-  // {
-  //   path: "**",
-  //   component: PageNotFoundComponent
-  // }
+  {
+    path: "**",
+    component: PageNotFoundComponent
+  }
+
 ];
 
 @NgModule({
@@ -30,3 +31,5 @@ const routes :Routes = [
   exports: [RouterModule]
 })
 export class AppRouting {}
+
+

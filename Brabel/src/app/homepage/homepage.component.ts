@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router'
 
 @Component({
   selector: 'app-homepage',
@@ -6,11 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./homepage.component.css']
 })
 export class HomepageComponent implements OnInit {
+  constructor(private router: Router) {}
 
-  constructor() { }
+  redirectTo() {
+    this.router.navigate(['/cities/san-francisco'])
+  }
 
   ngOnInit(): void {
   }
 
- 
+
 }
