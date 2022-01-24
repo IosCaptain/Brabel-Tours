@@ -41,17 +41,18 @@ export class HavanaComponent implements OnInit {
   }
 
   createNewCard(title: string, body: string) {
-    console.log(`Title: ${title} and Body: ${body}`)
+    //Creating new card with the information provided by the user
     let newCard = {
-      id: this.cardsInfo[this.cardsInfo.length - 1].id + 1,
+      id: 1,
       title: this.title,
       description: this.description,
       url: `/cities/san-francisco/comment/${this.title}`
     }
-    console.log(newCard)
-    // this.cardsInfo.pop()
-    // this.cardsInfo.unshift(newCard)
-    this.cardsInfo.push(newCard)
-    console.log(this.cardsInfo)
+    //Adjusting the id, latest adittion gets an id of 1 and the rest id+1
+    for (let i = 0; i<this.cardsInfo.length; i++) {
+      this.cardsInfo[i].id += 1;
+    }
+    //Adding the object at the top of the array
+    this.cardsInfo.unshift(newCard)
   }
 }
