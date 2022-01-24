@@ -1,8 +1,9 @@
 <!--Carousel-->
-<app-search-bar></app-search-bar>
+<app-search-bar [cardsInfo]="cardsInfo" (searchEvent)="receiveSearchResults($event)"></app-search-bar>
 
 <h1 class="sf">San Francisco</h1>
 
+<!--Carousel-->
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
 
@@ -18,22 +19,25 @@
   </div>
 </div>
 
-    <div class="container">
-      <div *ngFor= "let card of cardsInfo | slice:0:4" [ngClass]="card.id % 2 == 1 ? 'to-center' : ''" class="card">
-        <div class="row ">
-          <div class="col-md-4 col-sm-6 ">
-            <div class="card bg-primary mb-3 text-center">
-               <div class="card-body">
-                  <blockquote class="blockquote">
-                    <a class="title">{{card.title}}</a>
-                    <p class="description">{{card.description}}</p>
-                  </blockquote>
-               </div>
-            </div>
-         </div>
+<!--Cards-->
+<div class="container">
+  <div *ngFor= "let card of cardsInfo | slice:0:4" [ngClass]="card.id % 2 == 1 ? 'to-center' : ''" class="card">
+    <div class="row ">
+      <div class="col-md-4 col-sm-6 ">
+        <div class="card bg-primary mb-3 text-center">
+          <div class="card-body">
+            <blockquote class="blockquote">
+              <a class="title">{{card.title}}</a>
+              <p class="description">{{card.description}}</p>
+            </blockquote>
+          </div>
         </div>
       </div>
+    </div>
+  </div>
+</div>
 
+<!--New Card-->
 <div class="page">
   <h5 class="card-title">Enter your comments and tips below</h5>
   <label class="field field_v1">
@@ -47,6 +51,7 @@
     <span class="field__label-wrap">
       <span class="field__label">Description</span>
     </span>
-  </label>    
+  </label>
   <input class ="submitButton" (click)="createNewCard(title, description)" type="submit">
 </div>
+
