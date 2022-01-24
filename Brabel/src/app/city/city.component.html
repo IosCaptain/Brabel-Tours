@@ -1,5 +1,8 @@
 <!--Carousel-->
 <app-search-bar></app-search-bar>
+
+<h1 class="sf">San Francisco</h1>
+
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
 
@@ -7,47 +10,29 @@
       <img src="assets/img/SanFrancisco1.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+      <img src="assets/img/sfbridge.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+      <img src="assets/img/san-francisco-hero.jpeg" class="d-block w-100" alt="...">
     </div>
   </div>
 </div>
 
-
-<div class = "cards-container">
-  <div class="title-container">
-    <h2>San Francisco</h2>
-  </div>
-
-  <div *ngFor= "let card of cardsInfo | slice:0:4" [ngClass]="card.id % 2 == 1 ? 'to-center' : ''" class="card">
-    <div class="container bootstrap snippets bootdeys ">
-      <div class="row ">
-        <div class="col-md-4 col-sm-6 content-card ">
-          <div class="card-big-shadow">
-            <div class="card card-just-text" data-background="color" data-color="blue" data-radius="none">
-              <div class="content">
-        <a class="title">{{card.title}}</a>
-        <p class="description">{{card.description}}</p>
+    <div class="container">
+      <div *ngFor= "let card of cardsInfo | slice:0:4" [ngClass]="card.id % 2 == 1 ? 'to-center' : ''" class="card">
+        <div class="row ">
+          <div class="col-md-4 col-sm-6 ">
+            <div class="card bg-primary mb-3 text-center">
+               <div class="card-body">
+                  <blockquote class="blockquote">
+                    <a class="title">{{card.title}}</a>
+                    <p class="description">{{card.description}}</p>
+                  </blockquote>
+               </div>
+            </div>
+         </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-    </div>
-
-
-  <!-- <div class="card form-container">
-    <div class="comment-editor">
-      <h5 class="card-title">Enter your comments and tips below</h5>
-      <input [(ngModel)]="title" type="text" maxlength="200" placeholder="Title" size="45" required style="margin-bottom: 5px">
-      <input [(ngModel)]="description" type="text" class="card-text" placeholder="Comments" required style="height: 30px">
-      <input class ="submitButton" (click)="createNewCard(title, description)" type="submit">
-    </div>
-  </div>
-</div> -->
 
 <div class="page">
   <h5 class="card-title">Enter your comments and tips below</h5>
