@@ -12,6 +12,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HongKongComponent } from './hong-kong/hong-kong.component';
 import {HavanaComponent} from "./havana/havana.component";
+import { SearchBarComponent } from './search-bar/search-bar.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import {HavanaComponent} from "./havana/havana.component";
     HomepageComponent,
     PageNotFoundComponent,
     HongKongComponent,
-    HavanaComponent
+    HavanaComponent,
+    SearchBarComponent
   ],
   imports: [
     BrowserModule,
