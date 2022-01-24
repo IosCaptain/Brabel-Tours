@@ -58,7 +58,7 @@ export class CityComponent implements OnInit {
     this.cardsInfo.unshift(newCard)
 
     //Testing the search
-    this.receiveSearchResults(this.event)
+    // this.receiveSearchResults(this.event)
     console.log(this.searchResults)
   }
 
