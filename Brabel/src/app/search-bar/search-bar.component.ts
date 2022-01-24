@@ -13,7 +13,7 @@ export class SearchBarComponent implements OnInit {
   @Input() cardsInfo: any;
   constructor() { }
 
-  @Output() searchEvent = new EventEmitter<string>()
+  @Output() searchEvent = new EventEmitter<any>()
 
   ngOnInit(): void {
   }
@@ -24,12 +24,11 @@ export class SearchBarComponent implements OnInit {
     for (let i=0; i<this.cardsInfo.length; i++) {
       if (this.cardsInfo[i].title.includes(searchQuery)) {
         this.searchResults.push(this.cardsInfo[i])
+        //Sending the event to the parent
+        this.searchEvent.emit(this.searchResults)
       }
     } console.log(this.searchResults)
 
-  }
-  sendSearchResults() {
-    this.searchEvent.emit(this.searchResults)
   }
 
 }

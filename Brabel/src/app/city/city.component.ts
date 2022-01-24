@@ -36,7 +36,14 @@ export class CityComponent implements OnInit {
       url: `/cities/san-francisco/comment/${this.title}`
     }
   ]
-  searchResults: boolean|[] = false;
+  searchResults = [
+    {
+      id: 0,
+      title: 'title100',
+      description: 'description100',
+      url: `/cities/san-francisco/comment/${this.title}`
+    }
+  ];
   constructor() { }
 
   ngOnInit(): void {
