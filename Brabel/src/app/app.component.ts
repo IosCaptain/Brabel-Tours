@@ -10,7 +10,7 @@ export class AppComponent{
   homeRoute: any;
 
   constructor(private route: Router) {
-    this.homeRoute = route.url;
+    this.homeRoute = route;
     console.log(this.homeRoute)
   }
 }
