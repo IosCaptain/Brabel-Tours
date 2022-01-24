@@ -6,20 +6,15 @@
   margin-top: -15px;
 }
 
-#search{
-  position:absolute;
-  width: 400px;
-  right:550px;
-}
 
 .navbar-brand{
   font-size: 55px;
   height: 100px;
+  
+ 
 }
 
-#nav{
-  background-color: transparent;
-}
+
 .test {
   color: white;
 }
