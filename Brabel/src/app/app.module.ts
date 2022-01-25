@@ -13,6 +13,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { HongKongComponent } from './hong-kong/hong-kong.component';
 import {HavanaComponent} from "./havana/havana.component";
 import { SearchBarComponent } from './search-bar/search-bar.component';
+import { WeatherComponent } from './weather/weather.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
     PageNotFoundComponent,
     HongKongComponent,
     HavanaComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    WeatherComponent
   ],
   imports: [
     BrowserModule,

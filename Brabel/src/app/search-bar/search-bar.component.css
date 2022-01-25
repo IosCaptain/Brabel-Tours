@@ -2,11 +2,14 @@
     position:absolute;
     width: 400px;
     right:450px;
+    top: 25em;
   }
 
   #searchButton{
+    
     position:absolute;
     width: 100px;
     right:340px;
-    top: 160px;
+    top: 240px;
+    top: 25em;
   }

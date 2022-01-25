@@ -40,7 +40,7 @@
   justify-self: center;
   width: 35rem;
   margin-top: 5rem;
-  height: 5rem;
+  height: 4rem;
 }
 .comment-editor {
   display: grid;
@@ -351,8 +351,8 @@ LEVEL 4. SETTINGS
   padding: 1rem;
   display: grid;
   grid-gap: 30px;
-  left: 65rem;
-  top: 75rem;
+  left: 115rem;
+  top: 55rem;
   position:absolute;
 }
 
