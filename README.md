@@ -9,7 +9,7 @@ A website for tips and tricks about your favorite places in the world
 - BootStrap
 - OpenWeather API
 
-## User Stories
+## User Stories and MVP
 
 **A user should be able to:**
 
