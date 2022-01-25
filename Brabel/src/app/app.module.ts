@@ -14,6 +14,7 @@ import { HongKongComponent } from './hong-kong/hong-kong.component';
 import {HavanaComponent} from "./havana/havana.component";
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { WeatherComponent } from './weather/weather.component';
+import { WeatherHkComponent } from './weather-hk/weather-hk.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { WeatherComponent } from './weather/weather.component';
     HongKongComponent,
     HavanaComponent,
     SearchBarComponent,
-    WeatherComponent
+    WeatherComponent,
+    WeatherHkComponent
   ],
   imports: [
     BrowserModule,

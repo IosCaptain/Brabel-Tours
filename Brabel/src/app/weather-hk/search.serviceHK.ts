@@ -9,14 +9,10 @@ export class SearchService {
   constructor(private http: HttpClient) {}
 
 
-  createAPIObservable(zip: any) {
+
+  createAPIObservableHK(zip: any) {
     return this.http.get(
-      `http://api.openweathermap.org/data/2.5/weather?q=San Francisco,us&appid=052f26926ae9784c2d677ca7bc5dec98&&units=imperial`
+      `http://api.openweathermap.org/data/2.5/weather?q=Victoria,us&appid=052f26926ae9784c2d677ca7bc5dec98&&units=imperial`
     );
   }
-
-
 }
-
-
-
