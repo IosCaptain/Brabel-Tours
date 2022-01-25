@@ -41,3 +41,12 @@ A website for tips and tricks about your favorite places in the world
 ##Extra 
 
 1. Visit city pages via pretty urls, like "/cities/san-francisco".✅
+
+
+## Process
+| Day 1 | Day 2 | Day 3 | Day 4 |
+|-------|-------|-------|-------|
+| Project description| City Page Styling| | Finish CSS Styling| Weather API implementation
+ Planning Roles| Routing| Comment Section| Presentation Notes
+ Home Page Styling|Create City Pages|Search Bar Functionality| 
+ 
