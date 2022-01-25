@@ -1,5 +1,7 @@
 # Brabel-Tours
-A website for tips and tricks about your favorite places in the world
+A website to explore locations around the world and to share your experiences with other travelers!
+
+![screencapture-localhost-4200-2022-01-25-13_03_14](https://user-images.githubusercontent.com/59656072/151033505-52009730-0fa9-4408-90ce-629f8ae1d68a.png)
 
 ## Technologies Used
 - TypeScript
