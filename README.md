@@ -46,7 +46,7 @@ A website for tips and tricks about your favorite places in the world
 ## Process
 | Day 1 | Day 2 | Day 3 | Day 4 |
 |-------|-------|-------|-------|
-| Project description| City Page Styling|More Stlying | Weather API implementation|| 
+| Project description| City Page Styling|More Styling | Weather API implementation|| 
  Planning Roles| Routing| Comment Section| Presentation Notes
  Home Page Styling|Create City Pages|Search Bar Functionality| 
  
