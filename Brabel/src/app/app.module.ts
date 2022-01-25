@@ -15,6 +15,7 @@ import {HavanaComponent} from "./havana/havana.component";
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { WeatherComponent } from './weather/weather.component';
 import { WeatherHkComponent } from './weather-hk/weather-hk.component';
+import { WeatherHavanaComponent } from './weather-havana/weather-havana.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { WeatherHkComponent } from './weather-hk/weather-hk.component';
     HavanaComponent,
     SearchBarComponent,
     WeatherComponent,
-    WeatherHkComponent
+    WeatherHkComponent,
+    WeatherHavanaComponent
   ],
   imports: [
     BrowserModule,
