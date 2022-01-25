@@ -16,6 +16,7 @@
 
  .sf{
    text-align: center;
+   
  }
 
 .container {
@@ -352,7 +353,7 @@ LEVEL 4. SETTINGS
   display: grid;
   grid-gap: 30px;
   left: 65rem;
-  top: 80rem;
+  top: 75rem;
   position:absolute;
 }
 

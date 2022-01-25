@@ -1,0 +1,9 @@
+.headerWeather{
+    position:absolute;
+    left: 2em;
+}
+
+.weatherSF{
+    position: absolute;
+    right: 20em;
+}

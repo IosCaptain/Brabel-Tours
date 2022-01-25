@@ -1,10 +1,10 @@
-<section>
+<section class = "headerHavana">
     <h2>What's the Weather Where You're At?</h2>
   <!-- <input [(ngModel)]="zip" type="text" placeholder="Zip Code Here" (keyup)="findWeather(zip)"/> -->
     <input (click) ="findWeather(zip)" type="submit" value="Weather"/>
 </section>
 
-<section *ngIf="weather">
+<section class = "weatherHavana" *ngIf="weather">
     <h3>Here's the weather in {{weather.name}}:</h3>
     <p>Currently {{weather.weather[0].description}}.</p>
     <p>There's a high of {{weather.main.temp_max}} degrees and a low of {{weather.main.temp_min}} degrees.</p>
