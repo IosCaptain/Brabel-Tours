@@ -1,15 +1,14 @@
 #search{
     position:absolute;
     width: 400px;
-    right:450px;
-    top: 25em;
+    right:67em;
+    top: 10em;
   }
 
   #searchButton{
     
     position:absolute;
     width: 100px;
-    right:340px;
-    top: 240px;
-    top: 25em;
+    right:60em;
+    top: 10.4em;
   }
