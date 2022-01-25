@@ -2,7 +2,8 @@
 
 
 <!--Carousel-->
-<app-search-bar></app-search-bar>
+<app-search-bar [cardsInfo]="cardsInfo" (searchEvent)="receiveSearchResults($event)" ></app-search-bar>
+
 <h1 class="sf">Hong Kong</h1>
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-interval="1000">
   <div class="carousel-inner">
@@ -19,39 +20,59 @@
   </div>
 </div>
 
-<div class="container">
+<!--Cards-->
+<div class="container" *ngIf="searchResults[0].id == 0">
   <div *ngFor= "let card of cardsInfo | slice:0:4" [ngClass]="card.id % 2 == 1 ? 'to-center' : ''" class="card">
     <div class="row ">
       <div class="col-md-4 col-sm-6 ">
         <div class="card bg-primary mb-3 text-center">
-           <div class="card-body">
-              <blockquote class="blockquote">
-                <a class="title">{{card.title}}</a>
-                <p class="description">{{card.description}}</p>
-              </blockquote>
-           </div>
+          <div class="card-body">
+            <blockquote class="blockquote">
+              <a class="title">{{card.title}}</a>
+              <p class="description">{{card.description}}</p>
+            </blockquote>
+          </div>
         </div>
-     </div>
+      </div>
     </div>
   </div>
-
-<div class="page">
-<h5 class="card-title">Enter your comments and tips below</h5>
-<label class="field field_v1">
-<input class="field__input" [(ngModel)]="title" type="text" maxlength="200" placeholder="Title" size="45" required style="margin-bottom: 5px">
-<span class="field__label-wrap">
-  <span class="field__label">Title</span>
-</span>
-</label>
-<label class="field field_v2">
-<input class="field__input" [(ngModel)]="description" type="text" placeholder="Description" required style="height: 30px">
-<span class="field__label-wrap">
-  <span class="field__label">Description</span>
-</span>
-</label>    
-<input class ="submitButton" (click)="createNewCard(title, description)" type="submit">
 </div>
 
+<!--New Card-->
+<div class="page" *ngIf="searchResults[0].id == 0">
+  <h5 class="card-title">Enter your comments and tips below</h5>
+  <label class="field field_v1">
+    <input class="field__input" [(ngModel)]="title" type="text" maxlength="200" placeholder="Title" size="45" required style="margin-bottom: 5px">
+    <span class="field__label-wrap">
+      <span class="field__label">Title</span>
+    </span>
+  </label>
+  <label class="field field_v2">
+    <input class="field__input" [(ngModel)]="description" type="text" placeholder="Description" required style="height: 30px">
+    <span class="field__label-wrap">
+      <span class="field__label">Description</span>
+    </span>
+  </label>
+  <input class ="submitButton" (click)="createNewCard(title, description)" type="submit">
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+<!--Result Cards-->
+<div class="result-container" *ngIf="searchResults[0].id != 0">
+  <div *ngFor= "let result of searchResults | slice:0:4" [ngClass]="result.id % 2 == 1 ? 'to-center' : ''" class="card">
+    <div class="row ">
+      <div class="col-md-4 col-sm-6 ">
+        <div class="card bg-primary mb-3 text-center">
+          <div class="card-body">
+            <blockquote class="blockquote">
+              <a class="title">{{result.title}}</a>
+              <p class="description">{{result.description}}</p>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

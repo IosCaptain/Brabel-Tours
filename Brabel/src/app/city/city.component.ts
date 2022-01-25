@@ -1,5 +1,4 @@
-import {Component, Input, OnInit, ViewChild} from '@angular/core';
-import {SearchBarComponent} from "../search-bar/search-bar.component";
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-city',

@@ -34,7 +34,14 @@ export class HongKongComponent implements OnInit {
       url: `/cities/san-francisco/comment/${this.title}`
     }
   ]
-
+  searchResults = [
+    {
+      id: 0,
+      title: 'title100',
+      description: 'description100',
+      url: `/cities/san-francisco/comment/${this.title}`
+    }
+  ];
   constructor() { }
 
   ngOnInit(): void {
@@ -48,11 +55,20 @@ export class HongKongComponent implements OnInit {
       description: this.description,
       url: `/cities/san-francisco/comment/${this.title}`
     }
-    //Adjusting the id, latest adittion gets an id of 1 and the rest id+1
+    //Adjusting the id, the latest addition gets an id of 1 and the rest id+1
     for (let i = 0; i<this.cardsInfo.length; i++) {
       this.cardsInfo[i].id += 1;
     }
     //Adding the object at the top of the array
     this.cardsInfo.unshift(newCard)
+
+    //Testing the search
+    // this.receiveSearchResults(this.event)
+    console.log(this.searchResults)
   }
+
+  receiveSearchResults(event: any) {
+    this.searchResults = event
+  }
+
 }
