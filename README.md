@@ -52,3 +52,19 @@ A website to explore locations around the world and to share your experiences wi
  Planning Roles| Routing| Comment Section| Presentation Notes
  Home Page Styling|Create City Pages|Search Bar Functionality|Cleaning up final style 
  
+ 
+ 
+ 
+ 
+ ## Resources
+ 
+ - [Angular Docs](https://angular.io/docs)
+ - [Bootstrap Docs](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
+ - [OpenWeather API](https://openweathermap.org/api)
+ - [Bootstrap Designs](https://freefrontend.com/bootstrap-cards/)
+
+ ## Contributors
+ - [Abel Gonzalez](https://github.com/IosCaptain)
+ - [Brandon Nguyen](https://github.com/bnguyen45)
+
+ 
