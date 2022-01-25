@@ -8,7 +8,7 @@ A website to explore locations around the world and to share your experiences wi
 - CSS
 - HTML
 - Angular
-- BootStrap
+- BootStrap <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" />
 - OpenWeather API
 
 ## User Stories and MVP
